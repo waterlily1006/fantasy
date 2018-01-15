@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>mobile</title>
+	<link href="http://ff.laohu.com/_s/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/border.css">
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">   
+	<!-- <script src='js/jquery-1.8.3.js'></script> -->
+    <script src='js/bundle.js'></script>
+    <script src='js/index.js'></script>
+    <!-- <script src="http://cdn.bootcss.com/iScroll/5.2.0/iscroll.js"></script>
+     -->
+</head>
+<script>		
+!(function(doc, win) {
+    var docEle = doc.documentElement,
+        evt = "onorientationchange" in window ? "orientationchange" : "resize",
+        fn1 = function() {
+            var width = docEle.clientWidth;
+            width && (docEle.style.fontSize = 100 * (width / 320) + "px");
+            // if(){
+
+            // }
+           // alert(window.orientation);
+            //window.location.reload(); 
+        };
+        fn = function() {
+            var width = docEle.clientWidth;
+            width && (docEle.style.fontSize = 100 * (width / 320) + "px");
+        };  
+
+    win.addEventListener(evt, fn, false);
+    doc.addEventListener("DOMContentLoaded", fn, false);
+ 
+}(document, window));
+</script>
+<script>
+   (function rotate(){
+       var orientation = window.orientation;
+       if(orientation==90||orientation==-90){
+          document.body.style.display='none';
+          alert("请使用竖屏访问！");
+       }
+   window.onorientationchange=function(){
+      document.body.style.display="block";
+      rotate();
+   };
+})()
+</script>
+<body>
+	<div id='page'>
+        <div class="fix_box">
+            <div class='fix_box_clloapse'>
+                <div class="to_top top_clloapse">
+                    <img src="images/icon_side_top.png" alt="tu">
+                </div>
+                <div class="ch_lang select_lang">EN</div>   
+            </div>
+            <div class='fix_box_expand'>
+                <div class="to_top top_expand">
+                    <img src="images/icon_side_top.png" alt="tu">
+                </div>
+                <div class="ch_lang choose_lang">EN</div>
+                <ul class='lang_list'>
+                    <li class="lang first_lang">CHINESE</li>
+                    <li class="lang last_lang">ENGLISH</li>
+                </ul>
+            </div>
+         </div>
+		<div class="top">
+			<div class="logo fl"></div>
+            <span class='top_title fl'>Final Fantasy Awakening</span>
+            <div class='icon_group fr'> 
+                <a class='top_icon top_icon1 fl' target="_blank" href="javascript:;"></a>
+                <a class='top_icon top_icon2 fl' target="_blank" href="https://mob.oasgames.com/murl/?game_code= mffaen&lang=en"></a>
+            </div>
+		</div>
+        <div class='logo_box'></div>
+        <div class="video"></div>
+        <h4 class="title1"></h4>
+        <dl class="role_box clear">
+            <dt class="role_top clear">
+                <div class="view_detail">View Detail</div>
+                <ul class='role_title_list'>
+                    <li class='role_title role_title1 role_title_active'>
+                        <h3>Rem</h3>
+                        <p>[Guardian of the Vermilion Bird]</p>
+                    </li>
+                    <li class='role_title role_title2'>
+                        <h3>Machina</h3>
+                        <p>[Childhood Friend of Rem, Outstanding and Responsible]</p>
+                    </li>
+                    <li class='role_title role_title3'>
+                        <h3>Deuce</h3>
+                        <p>[Kind and Hard-Working, Attacks using a Flute]</p>
+                    </li>
+                    <li class='role_title role_title4'>
+                        <h3>Ace</h3>
+                        <p>[The Social Butterfly of Class Zero, a Cool-Headed Boy]</p>
+                    </li>
+                    <li class='role_title role_title5'>
+                        <h3>Caetuna</h3>
+                        <p>[l'Cie of the Vermilion Bird, Ancient and Mysterious]</p>
+                    </li>
+                    <li class='role_title role_title6'>
+                        <h3>Zhuyu</h3>
+                        <p>[Flames Envoy, Guardian of the Vermilion Bird]</p>
+                    </li>
+                    <li class='role_title role_title7'>
+                        <h3>White Tiger l'Cie</h3>
+                        <p>[Not of Many Words and Cold, Symbol of an Ancient Age]</p>
+                    </li>
+                </ul>
+                <ul class='big_role_list'>
+                    <li class="big_role_pic big_role_pic1 big_role_pic_active"></li>
+                    <li class="big_role_pic big_role_pic2"></li>
+                    <li class="big_role_pic big_role_pic3"></li>
+                    <li class="big_role_pic big_role_pic4"></li>
+                    <li class="big_role_pic big_role_pic5"></li>
+                    <li class="big_role_pic big_role_pic6"></li>
+                    <li class="big_role_pic big_role_pic7"></li>
+                </ul>
+                <ul class="role_voice_list">
+                    <li class="big_role_voice big_role_voice1  big_role_voice_active btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn1" src="audio/1.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice2 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn2" src="audio/2.wav" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice3 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn3" src="audio/3.wav" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice4 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn4" src="audio/4.wav" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice5 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn5" src="audio/5.mp3" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice6 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn6" src="audio/6.mp3" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                    <li class="big_role_voice big_role_voice7 btn-audio">
+                        <!-- <div class='btn-audio'> -->
+                            <audio id="mp3Btn7" src="audio/7.wav" >
+                                Your browser does not support the audio element.
+                            </audio>
+                        <!-- </div> -->
+                    </li>
+                </ul>
+                <ul class="small_role_list">
+                    <li class="small_role small_role1 cur"></li>
+                    <li class="small_role small_role2"></li>
+                    <li class="small_role small_role3"></li>
+                    <li class="small_role small_role4"></li>
+                    <li class="small_role small_role5"></li>
+                    <li class="small_role small_role6"></li>
+                    <li class="small_role small_role7"></li>
+                </ul>
+            </dt>
+        </dl>
+        <h4 class="title title2"></h4>
+       <div class="intro">
+            <div class='intro_inner'>
+                <ul class='big_intro_list  border fl'>
+                    <li class='big_intro border big_intro1 intro_active'>
+                    </li>
+                    <li class='big_intro border big_intro2'></li>
+                    <li class='big_intro border big_intro3'></li>
+                    <li class='big_intro border big_intro4'></li>
+                </ul>
+                <ul class="title_list border fl">
+                    <li class="small_intro intro1 small_intro_hover border">
+                        <a href="javascript:;">
+                            <img src="images/icon_id_01.png" alt="">
+                            <span class='intro_title_txt intro_title_txt_common'>Official Licensed</span>
+                        </a>
+                    </li>
+                    <li class="small_intro  intro2 border">
+                        <a href="javascript:;">
+                            <img src="images/icon_id_02.png" alt="">
+                            <span class='intro_title_txt'>A "Final Fantasy" Original Game</span>
+                        </a>
+                    </li>
+                    <li class="small_intro  intro3 border">
+                        <a href="javascript:;">
+                            <img src="images/icon_id_03.png" alt="">
+                            <span class='intro_title_txt'>Original VA from Japan</span>
+                        </a>
+                    </li>
+                    <li class="small_intro  intro4 border">
+                        <a href="javascript:;">
+                            <img src="images/icon_id_04.png" alt="">
+                            <span class='intro_title_txt intro_title_txt_common'>EIDOLONS</span>
+                        </a>
+                    </li>
+                </ul>     
+            </div>
+        </div>
+        <h4 class='title3'></h4>
+        <div id="image_box">
+            <div id="wrapper">
+                <ul class="iscroll">
+                    <li id="1" class='iscroll_active'><img src="images/img_ss_01.jpg" alt=""></li>
+                    <li id="2"><img src="images/img_ss_02.jpg" alt=""></li>
+                    <li id="3"><img src="images/img_ss_03.jpg" alt=""></li>
+                    <li id="4"><img src="images/img_ss_04.jpg" alt=""></li>
+                    <li id="5"><img src="images/img_ss_05.jpg" alt=""></li>
+                </ul>
+             </div>
+        </div>  
+        <h4 class='title4'></h4> 
+        <div class='bottom'>
+            <div class='bottom_inner'>
+               <!--  <p class='link'>
+                    <a href="###">About US</a><span>|</span>
+                    <a href="###">Privary Policy</a><span>|</span>
+                    <a href="###">Terms of Service</a>
+                </p> -->
+                <div class="logo_imgs">
+                    <img src="images/img_bottom_logo.jpg" alt="">
+                </div>
+                <div class="copy_right">
+                    <p>&copy;2017 SQUARE ENIX CO,LTD. All Rights Reserved. CHARATER DESIGN:TETSUYA NOMURA </p>
+                    <p>&copy;2012-2017 OASIS GAMES LIMITED. All rights reserved.</p>
+                    <p>All trademarks referenced herein are properties of their respective owners.</p>
+                </div>
+            </div>
+        </div>  
+	</div>	
+    <div class='page_mask'>
+        <div class='alert_box'>
+            <div class='content_box'>           
+                <ul class='content'>
+                    <div class='close'></div>
+                    <li class='content1 active_content'><div class='cont_img_box cont_img_box1'></div></li>
+                    <li class='content2'><div class='cont_img_box cont_img_box2'></div></li>
+                    <li class='content3'><div class='cont_img_box cont_img_box3'></div></li>
+                    <li class='content4'><div class='cont_img_box cont_img_box4'></div></li>
+                    <li class='content5'><div class='cont_img_box cont_img_box5'></div></li>
+                    <div class="content_btn content_btn_l">Privious</div>
+                    <div class="content_btn content_btn_r">Next</div>
+                </ul> 
+            </div>
+            <div class="video_box">
+                <div class='close_video'></div>
+                <div class="video_cont">                
+                    <iframe width="400" height="274" src="https://www.youtube.com/embed/Q4JJBwd26Ao" frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+            </div>
+       
+        
+            <ul class="detail_list">
+                <div class='close_detail_btn'></div>
+                <li class="detail_active detail detail1">
+                    <h3>Rem</h3>
+                    <p class="detail_title">[Guardian of the Vermilion Bird]</p>
+                    <div class="detail_big_role_voice big_role_voice1 btn-audio">
+                        <audio id="mp3Btn1" src="audio/1.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>Used to be a Agito Cadet in Class Seven. She later transferred to Class Zero with Machina, her childhood friend. She's a kind person and not good at lying. Even though she always thinks she can fool others, she never actually fools people that know her well, such as Machina.
+
+                    On the outside, she looks like a weak girl, but she has a strong spirit. She was born with an incurable disease but she keeps on taking part in battles. She sacrificed her already short life for the Vermilion Bird Crystal.</p>
+                    <div class='pre_btn'></div>
+                    <div class='next_btn'></div>
+                </li>  
+                <li class="detail detail2">
+                    <h3>Machina</h3>
+                    <p class="detail_title">[Childhood Friend of Rem, Outstanding and Responsible]</p>
+                    <div class="detail_big_role_voice big_role_voice2 btn-audio">
+                        <audio id="mp3Btn2" src="audio/2.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>Used to be an Agito Cadet of Class Two but transferred to Class Zero together with Rem. He is an outstanding student of the Vermilion Bird Akademeia and is childhood friend's with Rem. He has a strong responsibility sense and is capable of understanding what is in the mind of his comrades. </p>
+                    
+                </li>
+                <li class="detail detail3">
+                    <h3>Deuce</h3>
+                    <p class="detail_title">[Kind and Hard-Working, Attacks using a Flute]</p>
+                    <div class="detail_big_role_voice big_role_voice3 btn-audio">
+                        <audio id="mp3Btn2" src="audio/3.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>An Agito Cadet of Class Zero. Hard-working and honest, she always is very conscious when it comes to completing missions. Although she is kind, she can only stand and defend her own opinions, even to the point at which she can a little stubborn.
+
+                     She uses her Flute to create floating "Music Notes" to attack her foes.</p>
+                    
+                </li>  
+                <li class="detail detail4">
+                    <h3>Ace</h3>
+                    <p class="detail_title">[The Social Butterfly of Class Zero, a Cool-Headed Boy]</p>
+                    <div class="detail_big_role_voice big_role_voice4 btn-audio">
+                        <audio id="mp3Btn4" src="audio/4.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>An Agito Cadet of Class Zero. From the outside, he looks very immature, however, he's actions and thoughts are usually taken with a cool-head.
+
+                    He is a kind person and easily gets excited, he may act based on his feelings. He uses Tarot Cards to attack his foes.</p>
+                    
+                </li>  
+                <li class="detail detail5">
+                    <h3>Caetuna</h3>
+                    <p class="detail_title">[l'Cie of the Vermilion Bird, Ancient and Mysterious]</p>
+                    <div class="detail_big_role_voice big_role_voice5 btn-audio">
+                        <audio id="mp3Btn2" src="audio/5.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>The Secundus l'Cie of the Vermilion Bird Crystal and an adept at summoning magic, it is said she is capable of summoning all Eidolons. Caetuna is the oldest l'Cie in the entire Orience, her name appeared in the records of the ancient world war of 500 years ago. She is capable of speaking ancient language and her experience causes her to always skip to conclusions. A lot of people are unable to fully understand her. Always acts in the shadows at the orders of the Vermilion Bird. She is hardly seen by anyone, not even Zhuyu knows what she is up to. Some enemies believe this l'Cie in the outside is like Zhuyu but that inside she is herself. She seems to care deeply for someone within the Akademeia and she has been spying on that person a lot.</p>
+                    
+                </li>  
+                <li class="detail detail6">
+                    <h3>Zhuyu</h3>
+                    <p class="detail_title">[Flames Envoy, Guardian of the Vermilion Bird]</p>
+                    <div class="detail_big_role_voice big_role_voice6 btn-audio">
+                        <audio id="mp3Btn6" src="audio/6.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>The Primus l'Cie of the Vermilion Bird, he drives the powerful flame which represents the power of the Vermilion Bird Crystal. He has been under control of the Vermilion Bird Crystal for so long that he has lost most of his emotions, he wears a Cadet's uniform as a reminder of his identity.
+
+                    He has been a Primus l'Cie for over 100 years, other people can usually tell that he is older than usual by his speaking manner. The scars on his face were left from the fights with l'Cies from other nations. He has fought Nimbus more than once, however, the first time they fought each other seriously, a whole city vanished. </p>
+                    
+                </li>  
+                <li class="detail detail7">
+                    <h3>White Tiger l'Cie</h3>
+                    <p class="detail_title">[Not of Many Words and Cold, Symbol of an Ancient Age]</p>
+                    <div class="detail_big_role_voice big_role_voice7 btn-audio">
+                        <audio id="mp3Btn2" src="audio/7.mp3" >
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class='pass'>After being controlled by the White Tiger Crystal for over 100 years, the White Tiger l'Cie has less emotions than Zhuyu. Nimbus does not act in accordance to the Crystal's will for the White Tiger Crystal is under Cid's control. Nimbus is very silent and most people cannot tell what he is thinking.
+
+                    Orience, for some reason, this world was meant to end in the Tempus Finis... When the time comes, the harbinger of death will appear... When Nimbus feels that the end of the world is close, he will disappear and be nowhere to be seen...</p>
+                    
+                </li>    
+                <p class='detail_btn pre_btn'>Privious</p>
+                <p class='detail_btn next_btn'>Next</p>
+            </ul>  
+        </div>  
+    </div>             
+    </div>  
+</body>
+<script>
+    // function iScrollClick(){
+    //     if (/iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent)) return false;
+    //     if (/Chrome/i.test(navigator.userAgent)) return (/Android/i.test(navigator.userAgent));
+    //     if (/Silk/i.test(navigator.userAgent)) return false;
+    //     if (/Android/i.test(navigator.userAgent)) {
+    //        var s=navigator.userAgent.substr(navigator.userAgent.indexOf('Android')+8,3);
+    //        return parseFloat(s[0]+s[3]) < 44 ? false : true
+    //     }
+    // }
+    var ele = $(".iscroll");
+    //alert(ele.find("li").length)
+   // alert(ele.find("li").width())
+   // $(".iscroll").width((ele.find("li").length) * (ele.find("li").width()));
+    var myScroll = new IScroll('#wrapper', {click:true, scrollX: true, scrollY: false});
+    myScroll.scrollToElement('.active',true,true);
+</script>
+</html>

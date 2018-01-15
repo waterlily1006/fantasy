@@ -1,0 +1,13 @@
+{
+	"status":"success",
+	"data":{
+		"game_code":"movten",
+	    "lang_code":"en",
+	    "ios_url":"https:\/\/itunes.apple.com\/app\/id1238589899",
+	    "android_url":"https:\/\/play.google.com\/store\/apps\/details?id=com.oasis.movten.android",
+	    "error_url":"https:\/\/movt.oasgames.com\/en\/","facebook_url":"https:\/\/www.facebook.com\/Olympians-vs-Titans-121187528431947\/",
+        "totalpackage_url":"","pay_url":"\/\/pay.oasgames.com\/payment\/oaspay.php?gid=movten&uid=#uid#&lang=en",
+        "customer_url":"\/\/support.oasgames.com\/?a=question&m=add&game_code=movten&lang=en"
+    },
+    "msg":""
+}

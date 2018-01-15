@@ -1,0 +1,12 @@
+{
+	"css": [
+		"src/css/index/index.css",
+		"src/css/index/base.css",
+		"src/css/index/border.css",
+		"src/css/index/animate.min.css"
+	],
+
+	"js": [
+		"src/js/index/index.js"
+	]
+}
